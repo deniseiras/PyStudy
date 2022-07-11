@@ -1,4 +1,3 @@
-# import stack
 class Graph:
 
     def __init__(self):
@@ -12,7 +11,7 @@ class Graph:
 
 def graph_search(graph, first_node_str, breadht_first=True):
     if first_node_str not in graph.nodes.keys():
-        print(f'{first_node_str} not in graph!')
+            print(f'{first_node_str} not in graph!')
         print(graph.nodes)
         return -1
 
