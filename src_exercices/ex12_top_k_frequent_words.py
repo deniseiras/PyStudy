@@ -22,10 +22,8 @@ class Solution(object):
 
         if k == 0:
             return []
-        elif k > 1:
-            dic_words_count_ordered = dict(sorted(dic_words_count.items(), key=lambda item: (-item[-1], item[0])))
         else:
-            dic_words_count_ordered = dic_words_count
+            dic_words_count_ordered = dict(sorted(dic_words_count.items(), key=lambda item: (-item[-1], item[0])))
 
         k_max = min(len(dic_words_count_ordered), k)
         ret = [''] * k_max

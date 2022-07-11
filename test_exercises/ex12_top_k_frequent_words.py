@@ -39,6 +39,13 @@ class Test(unittest.TestCase):
         real = ["day", "the", "and", "is", "nice", "sunny"]
         self.solution_test(words, k, real)
 
+    def test_same_k_alpha_order_k2(self):
+        words = ["i", "love", "leetcode", "i", "love", "coding"]
+        k = 2
+        real = ["i","love"]
+        self.solution_test(words, k, real)
+
+
     def solution_test(self, words, k, real):
         solution = Solution()
         calc = solution.topKFrequent(words, k)
